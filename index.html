@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Halma</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Outside CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="row container-fluid">
+    <div class="col-lg-3 ml-3">
+      <div class="outline mt-3">
+        <div class="p-3">
+          <button id="start" class="btn btn-lg btn-dark">
+            <span>Start</span>
+          </button>
+          <br><br>
+          <h4 class="turn">Turn: <span></span></h4>
+          <br>
+          <h4 class="next">Next: <span></span></h4>
+          <br>
+          <button id="confirm" class="btn btn-lg btn-primary" disabled>Confirm</button>
+          <button id="cancel" class="btn btn-lg btn-outline-dark" disabled>Cancel</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-lg-6 p-3">
+      <script type="text/javascript">
+        document.writeln("<table border='1' >")
+        for (var i = 1; i <= 16; i++) {
+          document.writeln("<tr>");
+          for (var j = 1; j <= 16; j++) {
+            color = "#CE8753";
+            document.writeln("<td width='35' height='35' bgcolor='" + color + "' id='"+((i-1)*16+(j-1))+"' class='board'>  </td>");
+          }
+          document.writeln("</tr>");
+        }
+        document.writeln("</table>");
+      </script>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- index.js -->
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

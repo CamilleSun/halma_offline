@@ -1,0 +1,33 @@
+.outline{
+  border: 2px dashed #AAAAAA;
+  border-radius: 1rem;
+}
+
+.chess:hover{
+  box-shadow: 0 0 15px black;
+}
+
+.chess{
+  height: 2rem;
+  width: 2rem;
+  border-radius: 1rem;
+}
+
+.chessBlack{
+  border: 2px solid #777777;
+  background-color: #222222;
+}
+
+.chessWhite{
+  border: 2px solid #555555;
+  background-color: white;
+}
+
+.chessPath{
+  border: 2px dashed #BBBBBB;
+  background-color: #CE8753;
+}
+
+.chessSelected{
+  box-shadow: 0 0 20px 2px black;
+}
